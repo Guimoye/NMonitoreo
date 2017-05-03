@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.targetmaps.navego360="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/opcSave"
+        android:icon="@drawable/ic_save_white"
+        com.targetmaps.navego360:showAsAction="ifRoom"
+        android:title="Guardar">
+    </item>
+</menu>

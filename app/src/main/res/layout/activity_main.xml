@@ -1,0 +1,177 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+ 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+ 
+    <FrameLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:padding="1dp">
+
+        <LinearLayout
+            style="F0F0F0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:baselineAligned="false">
+<FrameLayout style="F0A090" android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_weight="1">
+<ImageButton
+    android:id="@+id/btn_Pendiente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@null"
+    android:scaleType="fitCenter"
+    android:src="@drawable/filtro_pendiente_off" />
+
+<TextView
+    android:id="@+id/txt_text01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:clickable="false"
+    android:paddingBottom="15dp"
+    android:text="Pendiente"
+    android:textColor="@color/verde"
+    android:textSize="12sp" >
+
+    </TextView>
+
+<TextView
+    android:id="@+id/txt_Pendiente"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:clickable="false"
+    android:paddingTop="6dp"
+    android:text="0"
+    android:textSize="20sp" >
+
+    </TextView>
+</FrameLayout>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_weight="1">
+<ImageButton
+    android:id="@+id/btn_EnProceso"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@null"
+    android:scaleType="fitCenter"
+    android:src="@drawable/filtro_proceso_off" />
+
+<TextView
+    android:id="@+id/txt_text02"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:clickable="false"
+    android:paddingBottom="10dp"
+    android:text="En proceso"
+    android:textSize="12sp" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_EnProceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:clickable="false"
+        android:paddingTop="6dp"
+        android:text="0"
+        android:textSize="20sp" >
+
+    </TextView>
+</FrameLayout>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_weight="1">
+<ImageButton
+    android:id="@+id/btn_Terminado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@null"
+    android:scaleType="fitCenter"
+    android:src="@drawable/filtro_terminado_off" />
+
+<TextView
+    android:id="@+id/txt_text03"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:clickable="false"
+    android:paddingBottom="10dp"
+    android:text="Terminado"
+    android:textSize="12sp" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_Terminado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:clickable="false"
+        android:paddingTop="6dp"
+        android:text="0"
+        android:textSize="20sp" >
+
+    </TextView>
+</FrameLayout>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_weight="1">
+<ImageButton
+    android:id="@+id/btn_Visitado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@null"
+    android:scaleType="fitCenter"
+    android:src="@drawable/filtro_visitado_off" />
+
+<TextView
+    android:id="@+id/txt_text04"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:clickable="false"
+    android:paddingBottom="10dp"
+    android:text="Visitado"
+    android:textSize="12sp" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_Visitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:clickable="false"
+        android:paddingTop="6dp"
+        android:text="0"
+        android:textSize="20sp" >
+
+    </TextView>
+</FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+ 
+</LinearLayout>

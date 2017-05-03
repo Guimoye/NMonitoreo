@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+>
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/IdCaso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        style="@style/AppBaseGestores.EtiquetasDetalle"/>
+
+    <Spinner
+        android:id="@+id/CmbEstado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_Nombre1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        />
+
+    <EditText
+        android:id="@+id/et_Nombre1"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="79"
+        android:minWidth="150dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_TaskDateTime1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y Hora" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_TaskDate1"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="none|date" />
+
+        <EditText
+            android:id="@+id/et_TaskTime1"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="none|datetime"
+            android:minWidth="150dp" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_Direccion1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"/>
+
+    <EditText
+        android:id="@+id/et_Direccion1"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="149"
+        android:minWidth="150dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/tv_Telefono1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono"/>
+
+    <EditText
+        android:id="@+id/et_Telefono1"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="59"
+        android:minWidth="150dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observaciones gestor" />
+
+    <EditText
+        android:id="@+id/tvObservaciones"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLength="249"
+        android:minWidth="150dp"
+        android:text="tvObservaciones" />
+
+    <TextView
+        android:id="@+id/textView02"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observaciones Cliente" />
+
+    <TextView
+        android:id="@+id/tvObservacionesCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tvObservacionesCliente" 
+        android:minWidth="150dp"
+        android:inputType="textMultiLine"
+        style="@style/AppBaseGestores.EtiquetasValor"/>
+    
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Razón de no pago"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/CmbRazonNoPago"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugar de contacto"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvLugarContacto"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minWidth="150dp"
+        android:text="tvLugarContacto"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvTelefono"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="tvTelefono"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView32"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvCorreo"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="tvCorreo"
+        android:visibility="gone" />
+ 
+    <TextView
+        android:id="@+id/textView22"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acuerdo"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvAcuerdo"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:minWidth="150dp"
+        android:text="tvAcuerdo"
+        android:visibility="gone" />
+    
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ExtrasTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvTemplateExtraLabel"
+            style="@style/AppBaseGestores.EtiquetasDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verde"
+            android:text="." />
+
+        <EditText
+            android:id="@+id/etTemplateExtraValue"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ocre"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:minHeight="20dp"
+            android:minWidth="150dp"
+            android:text="." >
+
+        </EditText>
+    
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_Extras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/layoutImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+</LinearLayout>
+
+</ScrollView>
+
+<FrameLayout
+            android:id="@+id/frgmSDAlertaServicio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:background="#FF1E4E"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/pImage"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.11"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_llamar"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_guardar"
+                    style="@style/AppBaseGestores.Botones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.11"
+                    android:text="Guardar"
+                    android:textColor="@color/blanco" />
+
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    style="@style/AppBaseGestores.Botones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.11"
+                    android:text="Cancelar"
+                    android:textColor="@color/blanco" />
+            </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>

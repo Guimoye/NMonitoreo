@@ -1,0 +1,60 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_height="55dp"
+        android:layout_width="89dp">
+
+        <ImageButton
+            android:id="@+id/btn_Pendiente_i"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/filtro_off" />
+
+        <LinearLayout
+            android:id="@+id/lay_PendienteBg_i"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="2dp"
+            android:background="#E9E9E9"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/txt_text01_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:clickable="false"
+            android:paddingBottom="12dp"
+            android:text=""
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/txt_Pendiente_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:clickable="false"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/lay_Pendiente_i"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

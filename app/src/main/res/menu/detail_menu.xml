@@ -1,0 +1,26 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.targetmaps.navego360="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/opcGMaps"
+        android:icon="@drawable/menu_maps"
+        com.targetmaps.navego360:showAsAction="ifRoom"
+        android:title="@string/google_maps">
+    </item>
+
+    <item
+        android:id="@+id/opcWaze"
+        android:icon="@drawable/menu_waze"
+        com.targetmaps.navego360:showAsAction="always"
+        android:title="@string/waze">
+    </item>
+
+    <item
+        android:id="@+id/opcCall"
+        android:icon="@drawable/menu_phone"
+        com.targetmaps.navego360:showAsAction="always"
+        android:title="@string/llamar">
+    </item>
+
+</menu>

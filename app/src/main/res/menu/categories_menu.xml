@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.targetmaps.navego360="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_new_form"
+        com.targetmaps.navego360:showAsAction="always"
+        android:icon="@drawable/ic_menu_white_24dp"
+        android:title="Opciones">
+
+        <menu>
+            <item
+                android:id="@+id/buscar"
+                android:icon="@android:drawable/ic_search_category_default"
+                android:title="Buscar">
+            </item>
+
+
+            <item android:id="@+id/menu2"
+                android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+                android:showAsAction="never|withText"
+                android:title="Estados">
+                <menu>
+                    <group
+                        android:id="@+id/groupEstadoColaborador"
+                        android:checkableBehavior="single">
+                        <item android:id="@+id/submenu1" android:title="@string/Estado_Colaborador_Libre"/>
+                        <item android:id="@+id/submenu2" android:title="@string/Estado_Colaborador_Ocupado" />
+                        <item android:id="@+id/submenu3" android:title="@string/Estado_Colaborador_Inoperativo" />
+                    </group>
+                </menu>
+            </item>
+
+            <item
+                android:id="@+id/backup"
+                android:icon="@drawable/ic_email_call"
+                android:title="Enviar Logs">
+            </item>
+
+            <item
+                android:id="@+id/opcSalir"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:showAsAction="never|withText"
+                android:title="Salir">
+            </item>
+
+        </menu>
+    </item>
+</menu>

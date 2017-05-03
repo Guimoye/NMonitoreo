@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".newVersion.ui.activities.categories.CategoryActivity">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Tabs -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Listado -->
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/blanco">
+
+                    <!-- Lista de categorias -->
+                    <ListView
+                        android:id="@+id/listDeCategorias"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <!-- Ultima sincronziacion y procentaje de descarga -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sync_view"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="bottom"
+                        android:background="@color/blanco"
+                        android:visibility="visible">
+
+                        <!-- Descarga -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+
+                            <RelativeLayout
+                                android:id="@+id/activity_custom_progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ProgressBar
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/progress_bar"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:progressDrawable="@drawable/custom_progressbar"/>
+
+                                <TextView
+                                    android:id="@+id/progress_bar_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="@color/blanco"
+                                    android:textStyle="bold"
+                                    android:textSize="18dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <!-- Ultima sincronizacion -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/last_sync"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/last_sync_date"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="@string/no_sync"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Mapa -->
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/maptablayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <com.mapbox.mapboxsdk.maps.MapView
+                            android:id="@+id/map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/footer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <ImageButton
+                                android:id="@+id/btn_MyLocation"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="5dp"
+                                android:background="@null"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/point_off"
+                                android:textColor="#000" />
+
+                            <ImageButton
+                                android:id="@+id/btn_MyServices"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_above="@+id/btn_MyLocation"
+                                android:layout_margin="5dp"
+                                android:background="@null"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/serv_off"
+                                android:textColor="#000" />
+
+
+                            <ImageButton
+                                android:id="@+id/btn_MyAreas"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_above="@+id/btn_MyServices"
+                                android:layout_margin="5dp"
+                                android:background="@null"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/descarga_on"
+                                android:textColor="#000" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+    <!-- Estados -->
+    <FrameLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        android:padding="1dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_Buttons"
+                style="F0A090"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

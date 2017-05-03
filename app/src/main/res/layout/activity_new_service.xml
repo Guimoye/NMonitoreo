@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_root"
+    tools:context=".newVersion.ui.activities.navego.NewServiceActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/IdCaso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                style="@style/AppBaseGestores.EtiquetasDetalle"/>
+
+            <Spinner
+                android:id="@+id/CmbEstado"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/tv_Nombre1"
+                style="@style/AppBaseGestores.EtiquetasDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre" />
+
+            <EditText
+                android:id="@+id/et_Nombre1"
+                style="@style/AppBaseGestores.EtiquetasValor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="79"
+                android:minWidth="150dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_TaskDateTime1"
+                style="@style/AppBaseGestores.EtiquetasDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha y Hora" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/et_TaskDate1"
+                    style="@style/AppBaseGestores.EtiquetasValor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="none|date" />
+
+                <EditText
+                    android:id="@+id/et_TaskTime1"
+                    style="@style/AppBaseGestores.EtiquetasValor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="none|datetime"
+                    android:minWidth="150dp" >
+
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_Direccion1"
+                style="@style/AppBaseGestores.EtiquetasDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección"/>
+
+            <EditText
+                android:id="@+id/et_Direccion1"
+                style="@style/AppBaseGestores.EtiquetasValor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="149"
+                android:minWidth="150dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_Telefono1"
+                style="@style/AppBaseGestores.EtiquetasDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono"/>
+
+            <EditText
+                android:id="@+id/et_Telefono1"
+                style="@style/AppBaseGestores.EtiquetasValor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="59"
+                android:minWidth="150dp"
+                android:text="" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frgmSDAlertaServicio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:padding="0dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="1dp"
+            android:background="#FF1E4E"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/pImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.11"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_llamar"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_guardar"
+                style="@style/AppBaseGestores.Botones"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0.11"
+                android:text="Continuar"
+                android:textColor="@color/blanco" />
+
+            <Button
+                android:id="@+id/btn_cancelar"
+                style="@style/AppBaseGestores.Botones"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="0.11"
+                android:text="Cancelar"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

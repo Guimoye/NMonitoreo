@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.targetmaps.navego360="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/optFotoCamara"
+        android:icon="@drawable/refresh_01"
+        android:title="Cargar Foto Desde la cámara"
+        com.targetmaps.navego360:showAsAction="never|withText">
+    </item>
+
+    <item
+        android:id="@+id/optFotoGaleria"
+        android:icon="@drawable/refresh_01"
+        android:title="Cargar Foto Desde la Galeria"
+        com.targetmaps.navego360:showAsAction="never|withText">
+    </item>
+
+</menu>

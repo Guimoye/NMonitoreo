@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#D2204C"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tvValorEstado"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvValorEstado"
+            android:textColor="@color/blanco"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="14dp" >
+
+        <TextView
+            android:id="@+id/tvTiempoCalculado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp" >
+
+        <TextView
+            android:id="@+id/textview11a"
+            style="@style/AppBaseGestores.EtiquetasDetalle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Tipo de Servicio : "
+            android:textColor="#D52639" />
+
+        <TextView
+            android:id="@+id/tvValorTipoServicio"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:text="tvValorEstado"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+               <TextView
+            android:id="@+id/textview12"
+            style="@style/AppBaseGestores.EtiquetasDetalle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Id Caso : "
+            android:textColor="#D52639" />
+
+			<TextView
+			    android:id="@+id/tvIdCaso"
+			    style="@style/AppBaseGestores.EtiquetasDetalle"
+			    android:layout_width="wrap_content"
+			    android:layout_height="37dp"
+			    android:layout_gravity="center_horizontal"
+			    android:text="0000"
+			    android:textColor="#000000" />
+        
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_usuario_detalle" />
+
+            <TextView
+                android:id="@+id/tvNombreCliente"
+                style="@style/AppBaseGestores.EtiquetasValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="37dp"
+                android:paddingLeft="10dp"
+                android:text="tvNombreCliente" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_ubicacion_detalle" />
+
+            <TextView
+                android:id="@+id/tvDireccionCliente"
+                style="@style/AppBaseGestores.EtiquetasValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="37dp"
+                android:paddingLeft="10dp"
+                android:text="tvDireccionCliente" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_telefono_detalle" />
+
+            <TextView
+                android:id="@+id/tvTelefonoCliente"
+                style="@style/AppBaseGestores.EtiquetasValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="37dp"
+                android:paddingLeft="10dp"
+                android:text="tvTelefonoCliente" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_content_link" />
+            
+            <TextView
+        android:id="@+id/tvServicioLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:minWidth="150dp"
+        style="@style/AppBaseGestores.EtiquetasValor"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+           <TextView
+        android:id="@+id/tvObservacionesCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tvObservacionesCliente" 
+        android:minWidth="150dp"
+        android:inputType="textMultiLine"
+        style="@style/AppBaseGestores.EtiquetasValor"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Propuesta de pago"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvPropuestaPago"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:text="tvPropuestaPago"
+        android:visibility="gone" />
+    <ImageView
+                    android:id="@+id/pImage"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.11"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_llamar"
+                    android:visibility="gone" />
+    
+</LinearLayout>    
+<HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/layoutImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+</HorizontalScrollView>
+    
+</LinearLayout>
+
+</ScrollView>

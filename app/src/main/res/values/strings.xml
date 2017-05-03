@@ -1,0 +1,83 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+
+    <string name="permission_rationale">Entro</string>
+    <string name="error_incorrect_password">clave incorrecta</string>
+    <string name="error_invalid_password">clave incorrecta</string>
+    <string name="error_field_required">inserte un usuario</string>
+    <string name="error_invalid_email">correo invalido</string>
+
+    <string name="app_name">Navego360Monitoreo</string>
+    <string name="app_version">Navego360</string>
+    <string name="title_section1">Listado</string>
+    <string name="title_section2">Mapa</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sync">Sincronizar</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="lbl_vacio">-</string>
+    <string name="lbl_estado_actual">Estado  Actual: </string>
+    <string name="lbl_diagnostico_ambulancia">Ingrese el diagnostico:</string>
+
+    <!-- Menu Principal -->
+    <string name="lbl_titulo_tipos_alertas">Tipos de Alertas</string>
+    <string name="lbl_titulo_hitorial">Historial</string>
+
+    <!-- Actividad Login -->
+    <string name="lbl_usuario">Usuario</string>
+    <string name="lbl_clave">Clave</string>
+    <string name="lbl_btn_loguear">INICIAR SESIÓN</string>
+    <string name="descripcion_logo_target_maps">Descripcion</string>
+
+    <!-- Actividad Datos de Alerta de Servicio -->
+
+    <string name="lbl_nombres_conductor">Nombre del conductor</string>
+    <string name="lbl_nombres_contacto">Contacto</string>
+
+    <string name="lbl_telefono_contacto">Telefonos</string>
+    <string name="lbl_tlf_fijo_contacto">Telefono fijo de contacto</string>
+    <string name="lbl_tlf_movil_contacto">Telefono movil de contacto</string>
+
+    <string name="lbl_departamento">Departamento</string>
+    <string name="lbl_provincia">Provincia</string>
+    <string name="lbl_distrito">Distrito</string>
+    <string name="lbl_direccion_mapa">Direccion de mapa</string>
+    <string name="lbl_direccion_asistir">Direccion a Asistir</string>
+    <string name="lbl_referencia_direccion">Referencia del Lugar</string>
+    <string name="crash_toast_text">Ocurrió un error, pero un reporte ha sido enviado a los desarrolladores para ayudar a resolver el problema!</string>
+
+    <!-- Actividad Login -->
+    <string name="Estado_Colaborador_Libre">LIBRE</string>
+    <string name="Estado_Colaborador_Ocupado">OCUPADO</string>
+    <string name="Estado_Colaborador_Inoperativo">INOPERATIVO</string>
+
+    <!-- Menu Detalle de servicio -->
+    <string name="google_maps">Google Maps</string>
+    <string name="waze">Waze</string>
+    <string name="llamar">Llamar</string>
+
+    <!-- MapBox Token -->
+    <string name="mapbox_token">sk.eyJ1IjoidGFyZ2V0bWFwc2RldiIsImEiOiJjaXU4bndwc3YwMDcwMnRxa3VobmdpOTEyIn0.p67nCqJxS8BHzcqlnsIt4w</string>
+    <string name="title_activity_initial">Sign in</string>
+
+    <!-- Sliders -->
+    <string name="initial_slider">Field Service Automation</string>
+    <string name="first_slider">Registra firmas, fotos, comentarios y lugares</string>
+    <string name="second_slider">Conecta y colabora con tus compañeros de trabajo</string>
+    <string name="third_slider">Realiza tareas de campo de una forma cada vez más simple</string>
+    
+    <!-- Categorias -->
+    <string name="sync_task">Descarga de tarea</string>
+    <string name="last_sync">ÚLTIMA SINCRONIZACIÓN</string>
+    <string name="no_sync">Aún no se sincronizan todos los datos</string>
+
+    <!-- Alertas -->
+    <string name="app_not_installed">No tiene instalado la aplicación DM Smart en su celular.</string>
+
+    <!-- Texts -->
+    <string name="filter_title_dialog">Configuración</string>
+    <string name="logout_message">Advertencia: Necesitará conexión a internet para iniciar una
+        nueva sesión. ¿Está Ud. seguro que desea Salir?</string>
+
+</resources>

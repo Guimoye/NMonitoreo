@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header_view"
+    android:padding="8dp"
+    android:background="@color/header_off">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/exp_lst_vw_header"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:textSize="16dip"
+        android:textColor="@color/blanco" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_form_tv"
+            android:textSize="16dip"
+            android:textColor="@color/blanco"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_form_total_tv"
+            android:textSize="16dip"
+            android:textColor="@color/blanco"/>
+    </LinearLayout>
+
+</LinearLayout>

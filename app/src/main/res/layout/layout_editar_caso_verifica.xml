@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+>
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/IdCaso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        style="@style/AppBaseGestores.EtiquetasDetalle"/>
+
+    <Spinner
+        android:id="@+id/CmbEstado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_Nombre1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        />
+
+    <EditText
+        android:id="@+id/et_Nombre1"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="79"
+        android:minWidth="150dp"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_TaskDateTime1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y Hora"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_TaskDate1"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="none|date" />
+
+        <EditText
+            android:id="@+id/et_TaskTime1"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="none|datetime"
+            android:minWidth="150dp" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_Direccion1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"/>
+
+    <EditText
+        android:id="@+id/et_Direccion1"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="149"
+        android:minWidth="150dp"
+        android:singleLine="true"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/tv_Telefono1"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono"/>
+
+    <EditText
+        android:id="@+id/et_Telefono1"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:maxLength="59"
+        android:minWidth="150dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observaciones gestor" />
+
+    <EditText
+        android:id="@+id/tvObservaciones"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="249"
+        android:minWidth="150dp"
+        android:singleLine="true"
+        android:text="tvObservaciones" />
+
+    <TextView
+        android:id="@+id/textView02"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observaciones Cliente" />
+
+    <TextView
+        android:id="@+id/tvObservacionesCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="tvObservacionesCliente" 
+        android:minWidth="150dp"
+        android:inputType="textMultiLine"
+        style="@style/AppBaseGestores.EtiquetasValor"/>
+    
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Razón de no pago"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/CmbRazonNoPago"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugar de contacto"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvLugarContacto"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minWidth="150dp"
+        android:text="tvLugarContacto"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvTelefono"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="tvTelefono"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView32"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvCorreo"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="tvCorreo"
+        android:visibility="gone" />
+ 
+    <TextView
+        android:id="@+id/textView22"
+        style="@style/AppBaseGestores.EtiquetasDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acuerdo"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvAcuerdo"
+        style="@style/AppBaseGestores.EtiquetasValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:minWidth="150dp"
+        android:text="tvAcuerdo"
+        android:visibility="gone" />
+    
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ExtrasTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvTemplateExtraLabel"
+            style="@style/AppBaseGestores.EtiquetasDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verde"
+            android:text="." />
+
+        <EditText
+            android:id="@+id/etTemplateExtraValue"
+            style="@style/AppBaseGestores.EtiquetasValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ocre"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:minHeight="20dp"
+            android:minWidth="150dp"
+            android:text="." >
+
+        </EditText>
+    
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_Extras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código de Agencia" />
+
+        <EditText
+            android:id="@+id/et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_direccion"
+            android:maxLength="249"
+            android:singleLine="true"
+            android:tag="extraField4" />
+        
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_direccion"
+            android:text="Tipo" />
+
+        <Spinner
+            android:id="@+id/sp_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_tipo"
+            android:tag="extraField1" >
+
+		</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_senaletica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_tipo"
+            android:text="Señalética" />
+
+        <Spinner
+            android:id="@+id/sp_senaletica"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_senaletica"
+            android:tag="extraField2" >
+</Spinner>
+
+        <TextView
+            android:id="@+id/tv_nombre_comercial"
+            style="@style/AppBaseGestores.EtiquetasExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_senaletica"
+            android:text="Nombre Comercial Expuesto"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_nombre_comercial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nombre_comercial"
+            android:maxLength="249"
+            android:singleLine="true"
+            android:tag="extraField11"
+            android:visibility="gone" />
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_ubicacion_referencial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_nombre_comercial"
+            android:text="Ubicación Referencial" />
+
+        <Spinner
+            android:id="@+id/sp_ubicacion_referencial"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_ubicacion_referencial"
+            android:tag="extraField3" >
+</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_departamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_ubicacion_referencial"
+            android:text="Departamento" />
+
+        <Spinner
+            android:id="@+id/sp_departamento"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_departamento"
+            android:tag="extraField13" >
+</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_provincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_departamento"
+            android:text="Provincia" />
+
+        <Spinner
+            android:id="@+id/sp_provincia"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_provincia"
+            android:tag="extraField14" >
+</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_distrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_provincia"
+            android:text="Distrito" />
+
+        <Spinner
+            android:id="@+id/sp_distrito"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_distrito"
+            android:tag="extraField5" >
+</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_cant_vent_cant_camb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_distrito"
+            android:text="Cantidad de Ventanillas/Cantidad de Cambistas" />
+
+        <Spinner
+            android:id="@+id/sp_cant_vent_cant_camb"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_cant_vent_cant_camb"
+            android:tag="extraField6" >
+</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_cant_vent_operativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_cant_vent_cant_camb"
+            android:text="Cantidad Ventanillas Operativas" />
+
+        <Spinner
+            android:id="@+id/sp_cant_vent_operativas"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_cant_vent_operativas"
+            android:tag="extraField7" >
+</Spinner>
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_tipo_cambio_compra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_cant_vent_operativas"
+            android:text="Tipo de Cambio Compra US$ (Visible)" />
+
+        <EditText
+            android:id="@+id/et_tipo_cambio_compra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tipo_cambio_compra"
+            android:maxLength="249"
+            android:numeric="decimal"
+            android:singleLine="true"
+            android:tag="extraField8" />
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_tipo_cambio_venta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_tipo_cambio_compra"
+            android:text="Tipo de Cambio Venta US$ (Visible)" />
+
+        <EditText
+            android:id="@+id/et_tipo_cambio_venta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tipo_cambio_venta"
+            android:maxLength="249"
+            android:numeric="decimal"
+            android:singleLine="true"
+            android:tag="extraField9" />
+
+        <TextView style="@style/AppBaseGestores.EtiquetasExtra"
+            android:id="@+id/tv_otras_divisas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_tipo_cambio_venta"
+            android:text="Otras Divisas" />
+
+        <Spinner
+            android:id="@+id/sp_otras_divisas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_otras_divisas" android:tag="extraField10"></Spinner>
+        
+    </RelativeLayout>
+
+    
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/layoutImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+</LinearLayout>
+
+</ScrollView>
+
+<FrameLayout
+            android:id="@+id/frgmSDAlertaServicio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:background="#FF1E4E"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/pImage"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.11"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_llamar"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_guardar"
+                    style="@style/AppBaseGestores.Botones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="0.11"
+                    android:text="Guardar"
+                    android:textColor="@color/blanco" />
+
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    style="@style/AppBaseGestores.Botones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="0.11"
+                    android:text="Cancelar"
+                    android:textColor="@color/blanco" />
+            </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>

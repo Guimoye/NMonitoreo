@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="action_bar">#ee3c5f</color>
+    <color name="negro">#000000</color>
+    <color name="gris">#BFBDBD</color>
+    <color name="grisaseo">#FBF9FA</color>
+    <color name="blanco">#ffffff</color>
+
+    <color name="rojo">#F9071B </color>
+    <color name="ocre">#D0C74A</color>
+
+    <color name="verde">#277C4E</color>
+    <color name="violeta">#4A2152</color>
+    <color name="granate">#D52639</color>
+
+    <color name="azul_oscuro">#EE3960</color>
+    <color name="azul">#0000AA</color>
+    <color name="azulado">#D2204C</color>
+
+    <!-- Formulario dinamico -->
+    <color name="fondo_gris">#ACBFCC</color>
+    <color name="header_off">#59707F</color>
+    <color name="header_on">#4A66AA</color>
+
+    <!-- View Pager -->
+    <color name="gris_logo">#9b9b9b</color>
+    <color name="blanco_trans">#CCFFFFFF</color>
+    <color name="rojo_login">#f63f59</color>
+
+    <color name="progress_color">#7ED320</color>
+    <color name="bg_progress_color">#80000000</color>
+
+    <color name="resume_background">#F6F6F6</color>
+
+</resources>

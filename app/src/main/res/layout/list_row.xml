@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dip" 
+    android:paddingBottom="5dip" 
+    >
+
+    <!-- ListRow Left sied Thumbnail image -->
+        <Button
+        android:id="@+id/colorEstado"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:layout_marginLeft="0dip"
+        android:minHeight="100dp"/>
+    <!-- Fecha Hora Programada -->
+    <TextView
+        android:id="@+id/FechaProgramada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:layout_marginLeft="6dip"
+        android:typeface="sans" />
+
+    <!-- Direccion -->
+    <TextView
+        android:id="@+id/Direccion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FechaProgramada"
+        android:layout_marginTop="1dip"
+        android:text="Direccion ..."
+        android:textColor="#343434"
+        android:layout_marginLeft="6dip"
+        android:textSize="15sp" 
+        android:ellipsize="end"
+ 		android:maxLines="1"
+ 		android:singleLine="true"
+ 		/>
+    
+    <!-- Nombre del Cliente -->
+    <TextView
+        android:id="@+id/NombreCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Direccion"
+        android:text="Nombre ..."
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:layout_marginLeft="6dip"
+        android:textSize="15sp" 
+        android:ellipsize="end"
+ 		android:maxLines="1"
+ 		android:singleLine="true"
+        />
+
+    <!-- Monto de Deuda-->
+    <TextView
+        android:id="@+id/MontoDeuda"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NombreCliente"
+        android:text="Monto ..."
+        android:textColor="#343434"
+        android:layout_marginLeft="6dip"
+        android:textSize="15dip" />
+    
+    
+    <!-- Rightend Duration -->
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/FechaProgramada"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:id="@+id/ic_sync"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ready_02" />
+
+    <TextView
+        android:id="@+id/IdCaso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/duration"
+        android:layout_below="@+id/NombreCliente"
+        android:textStyle="bold"
+        android:textSize="16dip"
+        android:textColor="#444444"
+        android:text="TextView" />
+
+</RelativeLayout>

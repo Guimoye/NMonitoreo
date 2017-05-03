@@ -1,0 +1,157 @@
+<resources>
+
+    <!--
+     Base application theme, dependent on API level. This theme is replaced
+     by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+ -->
+    <style name="AppBaseGestores" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseGestores">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!--         <item name="android:actionBarStyle">@style/CustomActionBarTheme</item>
+                <item name="actionBarStyle">@style/CustomActionBarTheme</item> -->
+    </style>
+
+
+    <!-- Estilo para las Cajas de Texto -->
+
+    <style name="AppBaseGestores.CajaTexto" parent="AppBaseGestores">
+        <item name="android:textSize">10pt</item>
+        <item name="android:background">@drawable/seleccion_fondo_caja_texto</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+
+    <!-- Estilo para los botones -->
+    <style name="AppBaseGestores.Botones" parent="AppBaseGestores">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:background">@drawable/seleccion_fondo_boton</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Estilo para la filas de la lista  -->
+
+    <style name="AppBaseGestores.FilaLista" parent="AppBaseGestores">
+        <item name="android:background">@drawable/seleccion_fondo_fila_lista</item>
+    </style>
+
+    <!-- Estilo para Pantalla Lista Tipo Alertas Menu -->
+    <style name="AppBaseGestores.FilaMenu" parent="AppBaseGestores">
+        <item name="android:background">@drawable/btnalertasoff</item>
+    </style>
+
+    <style name="AppBaseGestores.EtiquetasDetalle" parent="AppBaseGestores">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:textColor">@color/granate</item>
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+    <style name="AppBaseGestores.EtiquetasExtra" parent="AppBaseGestores">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:paddingTop">20dip</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+    <!-- Estilo para los Etiquetas -->
+
+    <style name="AppBaseGestores.EtiquetasValor" parent="AppBaseGestores">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/borde_multiline</item>
+    </style>
+
+    <style name="AppBaseGestores.EtiquetasValorMultilne" parent="AppBaseGestores">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/borde_multiline</item>
+    </style>
+
+    <style name="AppBaseGestores.VerticalLayoutInputs">
+        <item name="android:background">@drawable/border_layout</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:topOffset">10dp</item>
+    </style>
+
+    <!-- Boton de estados -->
+    <style name="AppBaseGestores.EtiquetasEstados" parent="AppBaseGestores">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- Formulario Dinamicos -->
+    <style name="AppBaseGestores.LabelComponent" parent="AppBaseGestores">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+    <!-- Formulario Dinamicos -->
+    <!-- Label -->
+    <style name="AppBaseGestores.LabelSection" parent="AppBaseGestores">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+    <!-- Header -->
+    <style name="AppBaseGestores.EtiquetasHeader" parent="AppBaseGestores">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textColorHint">@color/blanco</item>
+        <item name="android:textSize">14dp</item>
+        <item name="colorAccent">@color/blanco</item>
+        <item name="colorControlNormal">@color/blanco</item>
+        <item name="colorControlActivated">@color/blanco</item>
+    </style>
+
+    <!-- NAVEGOGESTORES Estilos -->
+    <!--
+    <style name="ActionBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="ActionBarButtonWhite" parent="@style/ActionBarButton">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="ActionBarButtonOffWhite" parent="@style/ActionBarButton">
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+     -->
+
+</resources>
