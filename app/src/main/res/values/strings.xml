@@ -89,10 +89,11 @@
     <string name="title_activity_transition_add">Añadir Nombre Activity</string>
 
     <string-array name="names_array">
-        <item>Miguel</item>
-        <item>Juliana</item>
-        <item>Cristobal</item>
-        <item>Amy</item>
+        <item>Metalurgia</item>
+        <item>Carpinteria</item>
+        <item>Ventas</item>
+        <item>Administracion</item>
+        <!--
         <item>Jason</item>
         <item>Melissa</item>
         <item>David</item>
@@ -138,7 +139,7 @@
         <item>Ryan</item>
         <item>Karen</item>
         <item>Jeremy</item>
-        <item>Daniel</item>
+        <item>Daniel</item> -->
     </string-array>
 
 </resources>
