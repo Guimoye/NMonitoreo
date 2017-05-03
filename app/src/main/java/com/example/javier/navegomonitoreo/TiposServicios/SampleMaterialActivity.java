@@ -114,7 +114,7 @@ public class SampleMaterialActivity extends AppCompatActivity {
         for (int i = 0; i < names.length; i++) {
             Card card = new Card();
             card.setId((long) i);
-            card.setName(names[i]);
+            card.setName(names[i].toUpperCase());
             card.setColorResource(colors[i]);
             Log.d(DEBUG_TAG, "Card created with id " + card.getId() + ", name " + card.getName() + ", color " + card.getColorResource());
             cardsList.add(card);

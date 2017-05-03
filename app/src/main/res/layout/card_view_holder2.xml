@@ -50,8 +50,9 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_weight="1"
+                android:padding="5dp"
                 android:text="METALURGIA"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/text_size_servicio"
@@ -61,17 +62,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:background="@android:color/white"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="5dp">
 
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:tint="@color/gris_logo"
+                    android:tint="@color/rojo"
                     card_view:srcCompat="@drawable/ic_alert" />
 
                 <TextView
@@ -80,8 +81,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:text="100 Usuarios"
-                    android:textColor="@android:color/black"
+                    android:text="50 Incidencias"
+                    android:textColor="@color/rojo"
                     android:textSize="@dimen/text_size2"
                     android:transitionName="name_transition" />
 
@@ -90,10 +91,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="15dp"
                 android:background="@android:color/white"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="5dp">
 
 
                 <ImageView
