@@ -1,6 +1,7 @@
 package com.example.javier.navegomonitoreo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Vibrator;
 import android.support.design.widget.TextInputEditText;
 import android.app.LoaderManager.LoaderCallbacks;
@@ -9,11 +10,13 @@ import android.content.Loader;
 import android.database.Cursor;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.javier.navegomonitoreo.TiposServicios.SampleMaterialActivity;
 import com.example.javier.navegomonitoreo.variables.Messages;
 
 
@@ -53,6 +56,13 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     private void validarLoggin(){
         String usuario = mEmailView.getText().toString().trim();
         String clave = mPasswordView.getText().toString().trim();
+
+        Log.e("eeee","presiono botonnnn pasa a otra pg");
+
+        Intent login = new Intent().setClass(getApplication(), SampleMaterialActivity.class);
+        startActivity(login);
+        finish();
+
         /*
         if (Validation.validateUser(usuario, clave)) {
             validateAllPermissionsToLogin();

@@ -45,4 +45,9 @@
     <!-- Margen de imagen de marker (con prioridad)-->
     <dimen name="margin_marker_top">20dp</dimen>
 
+    <dimen name="padding">16dp</dimen>
+    <dimen name="text_size">32sp</dimen>
+    <dimen name="text_size2">14sp</dimen>
+    <dimen name="initial_size">100sp</dimen>
+
 </resources>
